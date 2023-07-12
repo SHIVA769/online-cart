@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoppyy - Best Online Shopping Site</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/aff7aed975.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" href="images/logowithback.png"/>
+</head>
+
+<body>
+    <!-- top -->
+    <header>
+        <div class="header" id="header">
+            <div id="logo">
+                <div id="logoimg"><img src="images/logo.png" alt="" height="90px"></div>
+                <div class="logoname"><img src="images/writtenshoppyy.png" alt=""></div>
+            </div>
+            <div class="searchbar">
+                <input id="search" type="text" placeholder="Search for Products">
+            </div>
+            <div id="headerright">
+                <ul>
+                    <li id="locate"><a href=""><i class="fa-solid fa-location-dot fa-2xl" style="color: #ca1111;"></i>I live here</a></li>
+                    <li id="kart"><i class="fa-sharp fa-solid fa-cart-shopping fa-2xl" style="color: #04ec93;"></i><input type="text" id="cartqty"></li>
+                    <li id="userr"><i class="fa-solid fa-circle-user fa-2xl" style="color: #4b0bdf;"></i></li>
+                </ul>
+            </div>
+        </div>
+        <div class="blur hidden" id="bluur">
+        </div>
+        <div class="userdata hidden">
+            <img src="images/user-removebg-preview.png" width="100px" alt="">
+            <h2>Admin Shoppy</h2>
+            <div class="manage">
+                <hr>
+                <p>Mail - arshdeep@shoppy.com</p>
+                <hr>
+                <p>Username - Admin</p>
+                <hr>
+                <p>PassWord - *****12</p>
+                <hr>
+                <button class="logout">LogOut</button>
+
+            </div>
+        </div>
+    </header>
+    <!-- navbar -->
+    <nav>
+        <div class="nav">
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#headfashion">Fashion</a></li>
+                <li><a href="#headtoys">Toys</a></li>
+                <li><a href="#headelectronics">Electronics</a></li>
+                <li><a href="#headbeauty">Beauty</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <!-- slider -->
+        <div class="slides">
+            <div id="sliderimage">
+                <div class="img1" id="slidingimage1">
+                </div>
+                
+            </div>
+        </div>
+        <!-- items -->
+        <div class="itemcontainer">
+            <div class="container" id="container1">
+                <div class="items" id="item1">
+                    <img src="images/item1.png" alt="item1">
+                    <p>Acer EK240YC <br> 23.8 Inch <br>₹7,410</p>
+                </div>
+                <div class="items" id="item2">
+                    <p>ZEBRONICS 24 Inch <br> ₹6,999</p>
+                    <img src="images/item2.png" alt="item2">
+                </div>
+            </div>
+            <div class="container" id="container1">
+                <div class="items" id="item3">
+                    <img src="images/item3.png" alt="item3">
+                    <p>Fashion Colour Kiss Lip  Matte<br>₹262</p>
+                </div>
+                <div class="items" id="item4">
+                    <p>YouBella Jewellery Gold Plated Earrings <br>₹209</p>
+                    <img src="images/item4.jpg" alt="item4">
+                </div>
+            </div>
+            <div class="container" id="container1">
+                <div class="items" id="item5">
+                    <img src="images/item5.jpg" alt="item5">
+                    <p>Lymio Casual Shirt for Men <br>₹369</p>
+                </div>
+                <div class="items" id="item6">
+                    <p> Myx Women Women Saree <br> ₹406</p>
+                    <img src="images/item6.jpg" alt="item6">
+                </div>
+            </div>
+            <div class="container" id="container1">
+                <div class="items" id="item7">
+                    <img src="images/item7.webp" alt="item5">
+                    <p>LEGO Creator Space Shuttle <br>₹1,139</p>
+                </div>
+                <div class="items" id="item8">
+                    <p>FUNVERSE® Duck Track Toys for Kids<br> ₹599</p>
+                    <img src="images/item8.webp" alt="item6">
+                </div>
+            </div>
+        </div>
+        <!-- fashion -->
+        <h1 id="headfashion">FASHION</h1>
+        <div id="fashion">
+            <div class="fashionitem" id="fitem1">
+                <img src="images/fitem1.png" alt="fitem1">
+                <div class="details">
+                    <h2>Fashion Sandals</h2>
+                    <p>Rs439</p>
+                </div>
+                <div class="cart">
+                    <button class="subtractItem" onclick="cartsubtract()">-</button>
+                    <input type="text" placeholder="0" class="qty">
+                    <button class="plus" id="" onclick="cartadd()">+</button>
+                </div>
+            </div>
+            <div class="fashionitem" id="fitem2">
+                <img src="images/fitem2.png" alt="fitem2">
+                <div class="details">
+                    <h2>MIRCHI FASHION</h2>
+                    <p>Rs439</p>
+                </div>
+                <div class="cart">
+                    <button class="subtractItem" onclick="cartsubtract()">-</button>
+                    <input type="text" placeholder="0" class="qty">
+                    <button class="plus" id="" onclick="cartadd()">+</button>
+                </div>
+            </div>
+            <div class="fashionitem" id="fitem3">
+                <img src="images/fitem3.png" alt="fitem3">
+                <div class="details">
+                    <h2>Shining Diva</h2>
+                    <p>₹290</p>
+                </div>
+                <div class="cart">
+                    <button class="subtractItem" onclick="cartsubtract()">-</button>
+                    <input type="text" placeholder="0" class="qty">
+                    <button class="plus" id="" onclick="cartadd()">+</button>
+                </div>
+            </div>
+            <div class="fashionitem" id="fitem4">
+                <img src="images/fitem4.png" alt="fitem4">
+                <div class="details">
+                    <h2>Lymio Casual Shirt</h2>
+                    <p>Rs369</p>
+                </div>
+                <div class="cart">
+                    <button class="subtractItem" onclick="cartsubtract()">-</button>
+                    <input type="text" placeholder="0" class="qty">
+                    <button class="plus" id="" onclick="cartadd()">+</button>
+                </div>
+            </div>
+            <div class="fashionitem" id="fitem5">
+                <img src="images/fitem5.png" alt="fitem5">
+                <div class="details">
+                    <h2>FUNDAY FASHION</h2>
+                    <p>Rs340</p>
+                </div>
+                <div class="cart">
+                    <button class="subtractItem" onclick="cartsubtract()">-</button>
+                    <input type="text" placeholder="0" class="qty">
+                    <button class="plus" id="" onclick="cartadd()">+</button>
+                </div>
+            </div>
+        </div>
+        <!-- Toys -->
+        <h1 id="headtoys">TOYS</h1>
+        <div id="toys">
+            <div class="fashionitem" id="titem1">
+                <img src="images/titem1.png" alt="titem1">
+                <div class="details">
+                    <h2>FunBlast DIY </h2>
+                    <p>Rs359</p>
+                </div>
+                <div class="cart">
+                    <button class="subtractItem" onclick="cartsubtract()">-</button>
+                    <input type="text" placeholder="0" class="qty">
+                    <button class="plus" id="" onclick="cartadd()">+</button>
+                </div>
+            </div>
+            <div class="fashionitem" id="titem2">
+                <img src="images/titem2.png" alt="titem2">
+                <div class="details">
+                    <h2>Unicorn Soft Toy</h2>
+                    <p>Rs349</p>
+                </div>
+                <div class="cart">
+                    <button class="subtractItem" onclick="cartsubtract()">-</button>
+                    <input type="text" placeholder="0" class="qty">
+                    <button class="plus" id="" onclick="cartadd()">+</button>
+                </div>
+            </div>
+            <div class="fashionitem" id="titem3">
+                <img src="images/titem3.png" alt="titem3">
+                <div class="details">
+                    <h2>Royal Monster Truck</h2>
+                    <p>Rs209</p>
+                </div>
+                <div class="cart">
+                    <button class="subtractItem" onclick="cartsubtract()">-</button>
+                    <input type="text" placeholder="0" class="qty">
+                    <button class="plus" id="" onclick="cartadd()">+</button>
+                </div>
+            </div>
+            <div class="fashionitem" id="titem4">
+                <img src="images/titem4.png" alt="titem4">
+                <div class="details">
+                    <h2>Phantom Model Car</h2>
+                    <p>Rs410</p>
+                </div>
+                <div class="cart">
+                    <button class="subtractItem" onclick="cartsubtract()">-</button>
+                    <input type="text" placeholder="0" class="qty">
+                    <button class="plus" id="" onclick="cartadd()">+</button>
+                </div>
+            </div>
+            <div class="fashionitem" id="titem5">
+                <img src="images/titem5.png" alt="titem5">
+                <div class="details">
+                    <h2>Crawling Crab</h2>
+                    <p>Rs1099</p>
+                </div>
+                <div class="cart">
+                    <button class="subtractItem" onclick="cartsubtract()">-</button>
+                    <input type="text" placeholder="0" class="qty">
+                    <button class="plus" id="" onclick="cartadd()">+</button>
+                </div>
+            </div>
+        </div>
+        <!-- electronics -->
+        <h1 id="headelectronics">ELECTRONICS</h1>
+        <div id="electronics">
+            <div class="fashionitem" id="eitem1">
+                <img src="images/eitem1.png" alt="eitem1">
+                <div class="details">
+                    <h2>Galaxy S23 Ultra</h2>
+                    <p>Rs1,34,999</p>
+                </div>
+                <div class="cart">
+                    <button class="subtractItem" onclick="cartsubtract()">-</button>
+                    <input type="text" placeholder="0" class="qty">
+                    <button class="plus" id="" onclick="cartadd()">+</button>
+                </div>
+            </div>
+            <div class="fashionitem" id="eitem2">
+                <img src="images/eitem2.png" alt="eitem2">
+                <div class="details">
+                    <h2>boAt Airdopes 141</h2>
+                    <p>Rs 1,199</p>
+                </div>
+                <div class="cart">
+                    <button class="subtractItem" onclick="cartsubtract()">-</button>
+                    <input type="text" placeholder="0" class="qty">
+                    <button class="plus" id="" onclick="cartadd()">+</button>
+                </div>
+            </div>
+            <div class="fashionitem" id="eitem3">
+                <img src="images/eitem3.png" alt="eitem3">
+                <div class="details">
+                    <h2>boAT Smartwatch</h2>
+                    <p>Rs2,299</p>
+                </div>
+                <div class="cart">
+                    <button class="subtractItem" onclick="cartsubtract()">-</button>
+                    <input type="text" placeholder="0" class="qty">
+                    <button class="plus" id="" onclick="cartadd()">+</button>
+                </div>
+            </div>
+            <div class="fashionitem" id="eitem4">
+                <img src="images/eitem4.png" alt="eitem4">
+                <div class="details">
+                    <h2>HONOR PAD X8</h2>
+                    <p>Rs12,998</p>
+                </div>
+                <div class="cart">
+                    <button class="subtractItem" onclick="cartsubtract()">-</button>
+                    <input type="text" placeholder="0" class="qty">
+                    <button class="plus" id="" onclick="cartadd()">+</button>
+                </div>
+            </div>
+            <div class="fashionitem" id="eitem5">
+                <img src="images/eitem5.png" alt="eitem5">
+                <div class="details">
+                    <h2>MagicBook X14</h2>
+                    <p>Rs51,990</p>
+                </div>
+                <div class="cart">
+                    <button class="subtractItem" onclick="cartsubtract()">-</button>
+                    <input type="text" placeholder="0" class="qty">
+                    <button class="plus" id="" onclick="cartadd()">+</button>
+                </div>
+            </div>
+        </div>
+        <!-- beauty -->
+        <h1 id="headbeauty">BEAUTY</h1>
+        <div id="beauty">
+            <div class="fashionitem" id="bitem1">
+                <img src="images/bitem1.png" alt="bitem1">
+                <div class="details">
+                    <h2>Makeup Sponge Blender</h2>
+                    <p>Rs2,192</p>
+                </div>
+                <div class="cart">
+                    <button class="subtractItem" onclick="cartsubtract()">-</button>
+                    <input type="text" placeholder="0" class="qty">
+                    <button class="plus" id="" onclick="cartadd()">+</button>
+                </div>
+            </div>
+            <div class="fashionitem" id="bitem2">
+                <img src="images/bitem2.png" alt="bitem2">
+                <div class="details">
+                    <h2>Makeup Sponge Set</h2>
+                    <p>Rs292</p>
+                </div>
+                <div class="cart">
+                    <button class="subtractItem" onclick="cartsubtract()">-</button>
+                    <input type="text" placeholder="0" class="qty">
+                    <button class="plus" id="" onclick="cartadd()">+</button>
+                </div>
+            </div>
+            <div class="fashionitem" id="bitem3">
+                <img src="images/bitem3.png" alt="bitem3">
+                <div class="details">
+                    <h2>Vandelay Facial Steamer</h2>
+                    <p>Rs1,899</p>
+                </div>
+                <div class="cart">
+                    <button class="subtractItem" onclick="cartsubtract()">-</button>
+                    <input type="text" placeholder="0" class="qty">
+                    <button class="plus" id="" onclick="cartadd()">+</button>
+                </div>
+            </div>
+            <div class="fashionitem" id="bitem4">
+                <img src="images/bitem4.png" alt="bitem4">
+                <div class="details">
+                    <h2>Swiss Beauty</h2>
+                    <p>Rs301</p>
+                </div>
+                <div class="cart">
+                    <button  class="subtractItem" onclick="cartsubtract()">-</button>
+                    <input type="text" placeholder="0" class="qty">
+                    <button class="plus" id="" onclick="cartadd()">+</button>
+                </div>
+            </div>
+            <div class="fashionitem" id="bitem5">
+                <img src="images/bitem5.png" alt="bitem5">
+                <div class="details">
+                    <h2>Typsy Beauty Shade</h2>
+                    <p>Rs1,044</p>
+                </div>
+                <div class="cart">
+                    <button class="subtractItem" onclick="cartsubtract()">-</button>
+                    <input type="text" placeholder="0" class="qty">
+                    <button class="plus" id="" onclick="cartadd()">+</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
